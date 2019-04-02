@@ -17,29 +17,29 @@ mongoose.connection.on('error', console.error.bind(console, `Please check your m
 mongoose.connection.once('open', console.info.bind(console, `Is it connected to mongo at: ${config.mongodb}`))
 
 render(app, {
-  root: path.join(__dirname, 'server/views'),
-  layout: 'master',
-  viewExt: 'html',
-  cache: false,
-  debug: true
+    root: path.join(__dirname, 'server/views'),
+    layout: 'template',
+    viewExt: 'html',
+    cache: false,
+    debug: true
 })
 
 app.use(static('public/js'))
 app.use(static('public/css'))
 
 router
-  .get('/', main.render)
+    .get('/', main.render)
 
-  app
-  .use(router.routes())
-  .use(router.allowedMethods())
+app
+    .use(router.routes())
+    .use(router.allowedMethods())
 
 if (module.parent) {
-  module.exports = app
+    module.exports = app
 } else {
-  app.listen(config.port, function () {
-    console.info('process.env.NODE_ENV', process.env.NODE_ENV)
-    console.info('version', pckg.version)
-    console.info(JSON.stringify(config))
-  })
+    app.listen(config.port, function() {
+        console.info('process.env.NODE_ENV', process.env.NODE_ENV)
+        console.info('version', pckg.version)
+        console.info(JSON.stringify(config))
+    })
 }

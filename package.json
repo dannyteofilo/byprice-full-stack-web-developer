@@ -1,34 +1,34 @@
 {
-  "name": "byprice-full-stack-web-developer",
-  "version": "0.0.1",
-  "description": "ByPrice test for full stack web developer",
-  "main": "server.js",
-  "scripts": {
-    "test": "mocha tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ByPrice/byprice-full-stack-web-developer.git"
-  },
-  "keywords": [
-    "full-stack",
-    "test",
-    "jobs"
-  ],
-  "author": "@serchserch",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ByPrice/byprice-full-stack-web-developer/issues"
-  },
-  "homepage": "https://github.com/ByPrice/byprice-full-stack-web-developer#readme",
-  "dependencies": {
-    "koa": "^2.7.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
-  },
-  "devDependencies": {
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
-  }
+    "name": "byprice-full-stack-web-developer",
+    "version": "0.0.1",
+    "description": "ByPrice test for full stack web developer",
+    "main": "server.js",
+    "scripts": {
+        "test": "mocha tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ByPrice/byprice-full-stack-web-developer.git"
+    },
+    "keywords": [
+        "full-stack",
+        "test",
+        "jobs"
+    ],
+    "author": "@serchserch",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ByPrice/byprice-full-stack-web-developer/issues"
+    },
+    "homepage": "https://github.com/ByPrice/byprice-full-stack-web-developer#readme",
+    "dependencies": {
+        "koa": "^2.7.0",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
+    },
+    "devDependencies": {
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.2.1"
+    }
 }
